@@ -13,7 +13,7 @@ int main()
 {
     std::cout << "STL4010 test\n"; 
 
-	concurrency::concurrent_unordered_set<std::wstring> concurrent_unordered_set{};
+	concurrency::concurrent_unordered_set<std::wstring> concurrent_unordered_set{}; // STL4010 here
 	concurrent_unordered_set.insert({ L"test string" });
 
 	concurrency::concurrent_queue<std::wstring> concurrent_queue{};
